@@ -1,0 +1,51 @@
+{
+  "name": "powerbi-mcp-server",
+  "version": "0.1.0",
+  "description": "Model Context Protocol server for Power BI - enables AI assistants to interact with Power BI workspaces, datasets, and reports",
+  "main": "dist/index.js",
+  "type": "module",
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsx src/index.ts",
+    "start": "node dist/index.js",
+    "clean": "rm -rf dist",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "powerbi",
+    "power-bi",
+    "microsoft",
+    "ai",
+    "llm",
+    "claude",
+    "assistant",
+    "business-intelligence"
+  ],
+  "author": "Michael McKinley michael@mckinley.consulting",
+  "license": "SEE LICENSE IN LICENSE",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/michaelmckinleyconsulting/powerbi-mcp-server.git"
+  },
+  "bugs": {
+    "url": "https://github.com/michaelmckinleyconsulting/powerbi-mcp-server/issues"
+  },
+  "homepage": "https://github.com/michaelmckinleyconsulting/powerbi-mcp-server#readme",
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "dependencies": {
+    "@azure/msal-node": "^2.6.0",
+    "@modelcontextprotocol/sdk": "^0.5.0",
+    "axios": "^1.6.0",
+    "dotenv": "^16.3.1",
+    "zod": "^3.22.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.10.0",
+    "tsx": "^4.7.0",
+    "typescript": "^5.3.0"
+  }
+}
